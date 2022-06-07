@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  background: #bcc4fc;
+  color: #fff;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: rgb(235, 233, 233);
+}
+h1,h3 {
+  text-align: center;
+}
+.container{
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.container .box{
+  width: calc(33% - 2px);
+  height: 200px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.box .quote i{
+margin-top: 10px;
+font-size: 45px;
+color: #843008
+}
+.container .box .image{
+  margin: 5px 0;
+  height: 80px;
+  width: 80px;
+  background: #d0d2cf;
+  padding: 3px;
+  border-radius: 50%;
+}
+.box .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.box p{
+  margin-top: 8px;
+  font-size: 1px;
+  font-weight: 200;
+}
+.box .name_job{
+  margin: 5px 0 3px 0;
+  color: #3f3937;
+  font-size: 14px;
+  font-weight: 450;
+}
+ 
+@media (max-width:1045px){
+  .container .box{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:710px){
+  .container .box{
+    width: 100%;
+  }
+}
